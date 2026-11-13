@@ -3,7 +3,7 @@
 	<head>
 		<meta charset = "UTF-8">
 		<meta name="viewport" content="width=device-width, intial-scale=1.0">
-		<title>Home</title> 
+		<title>Cheese Festival Form</title> 
 	</head> 
 	
 	<body>
@@ -16,17 +16,17 @@
             <form action="" method="">
                 <p>
                     <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
                 </p>
 
                 <p>
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
                 </p>
 
                 <p>
                     <label for="phone">Phone:</label>
-                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
                 </p>
 
                 <fieldset>
@@ -41,12 +41,19 @@
                     <Label for="sunday">Sunday</Label>
                 </fieldset>
 
+                <label for="cheese">Cheese Preference:</label>
                 <select name="cheese" id="cheese">
-                    <optgroup label="Cheese Types">
+                    <optgroup label="Cheese Preference">
                         <option value="mild">Mild</option>
                         <option value="sharp">Sharp</option>
+                        <option value="specialty">Specialty</option>
                     </optgroup>
                 </select>
+
+                <p>
+                <label for="comments">Comments/Dietary Restrictions:</label>
+                <textarea name="comments" id="comments" placeholder="Enter your comments here"></textarea>
+                </p>
             </form>
         </main>
 
